@@ -128,7 +128,7 @@ const Chatbox = () => {
 
   return (
     <div className="pt-[7.5%] h-[100vh] flex overflow-hidden">
-      <div className="w-[30%] h-[86.5vh] p-5 overflow-y-auto flex flex-col">
+      <div className="w-[30%] h-[86.5vh] p-5 overflow-y-auto flex flex-col gap-5">
         {chats.length > 0 &&
           chats.map((chat) => (
             <div
