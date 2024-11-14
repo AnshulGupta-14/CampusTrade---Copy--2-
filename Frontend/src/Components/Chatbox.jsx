@@ -161,7 +161,7 @@ const Chatbox = () => {
           ))}
       </div>
       {uniqueMessages ? (
-        <div className="w-[70%] p-5 h-[86.5vh] flex flex-col gap-5 overflow-y-auto bg-red-100 pb-16">
+        <div className="w-[70%] p-5 h-[86.5vh] flex flex-col gap-5 overflow-y-auto pb-16">
           {uniqueMessages.map((msg, i) => (
             <div
               key={msg._id}

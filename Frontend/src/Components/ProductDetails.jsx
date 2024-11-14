@@ -206,7 +206,7 @@ const ProductDetails = () => {
                   onClick={() => navigate("/chatbox", { state: { product } })}
                   className="w-full py-3 border-2 mt-5 border-black font-bold text-center"
                 >
-                  <h1>Contact: {user.mobno}</h1>
+                  <h1>Contact</h1>
                 </div>
               ) : (
                 <NavLink to="/login">
