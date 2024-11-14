@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  // baseURL: "https://campustrade-backend.onrender.com/api/v1/",
-  baseURL: "http://localhost:8000/api/v1",
+  baseURL: "https://campustrade-copy-2-backend.onrender.com/api/v1/",
+  // baseURL: "http://localhost:8000/api/v1",
   withCredentials: true,
   headers: {
     accept: "application/json",
