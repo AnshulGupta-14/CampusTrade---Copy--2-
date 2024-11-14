@@ -201,19 +201,21 @@ const ProductDetails = () => {
                   <h1 className="text-xl font-bold">{user.fullname}</h1>
                 </div>
               </NavLink>
-              <div className="w-full py-3 border-2 mt-5 border-black font-bold text-center">
-                {Cookies.get("accessToken") ? (
+              {Cookies.get("accessToken") ? (
+                <div
+                  onClick={() => navigate("/chatbox", { state: { product } })}
+                  className="w-full py-3 border-2 mt-5 border-black font-bold text-center"
+                >
                   <h1>Contact: {user.mobno}</h1>
-                ) : (
-                  <div className="flex items-center justify-center">
-                    <span>Contact: ***********</span>
-                    <NavLink to="/login" className="ml-3 text-xs text-blue-600">
-                      {" "}
-                      show
-                    </NavLink>
+                </div>
+              ) : (
+                <NavLink to="/login">
+                  <div className="w-full py-3 border-2 mt-5 border-black font-bold text-center">
+                    {" "}
+                    Contact
                   </div>
-                )}
-              </div>
+                </NavLink>
+              )}
             </div>
           </div>
         </div>
